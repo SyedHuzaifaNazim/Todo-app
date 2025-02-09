@@ -2,15 +2,17 @@
 <html>
 <head>
 	<title>To-Do List</title>
+	<link rel="shortcut icon" href="https://cdn.dribbble.com/userupload/13624455/file/still-18c2554c70e71dc71b9619bb19387f4d.gif" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>To-Do List</h1>
-    <center>
-	<input type="text" id="input" placeholder="Add new task...">
-	<button onclick="addTask()">Add</button>
-	<ul id="list"></ul>
-    </center>
+	<header class="header">
+		<h1 class="hero">------------| TODO LIST |------------</h1>
+		<input type="text" id="input" placeholder="Add new task...">
+		<button onclick="addTask()">Add</button>
+		<button onclick="clearList()">Clear</button>
+	</header>
+	<ul id="list" draggable="true"></ul>
 	<script src="script.js"></script>
 </body>
 </html>
