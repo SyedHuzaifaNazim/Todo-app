@@ -172,6 +172,23 @@ li:hover {
   box-shadow: 0.1em 0.1em 0em 0 rgba(0,0,0,0.3);
   transform: rotate(45deg);
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    font-size: 8px;
+  }
+  .checkmark {
+    height: 1.5em;
+    width: 1.5em;
+  }
+  .header {
+    font-size: 1.5em;
+    input[type="text"] {
+      width: 60%;
+    }
+  }
+
+}
 /* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700"); */
 
 /* *, *::before, *::after {
