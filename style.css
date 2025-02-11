@@ -173,21 +173,153 @@ li:hover {
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: 1100px) {
-  .container {
-    font-size: 8px;
-  }
-  .checkmark {
-    height: 1.5em;
-    width: 1.5em;
-  }
-  .header {
-    font-size: 1.5em;
-    input[type="text"] {
-      width: 60%;
-    }
+@media (max-width: 1024px) {
+  body {
+      background-attachment: scroll; /* Change background attachment for tablet */
   }
 
+  h1 {
+      font-size: 2.2em; /* Adjust font size for tablets */
+  }
+
+  input[type="text"] {
+      width: 70%; /* Adjust width for better fit on tablets */
+  }
+
+  #input {
+      width: 90%; /* Allow the input element to take more space */
+  }
+
+  button {
+      width: 100%; /* Ensure buttons are responsive on tablets */
+      padding: 12px;
+  }
+
+  li {
+      padding: 12px;
+  }
+
+  .container {
+      font-size: 14px; /* Adjust checkbox font size */
+  }
+
+  .checkmark {
+      height: 2em;
+      width: 2em;
+  }
+}
+
+/* Tablets (landscape) and smaller laptops */
+@media (max-width: 1280px) {
+  body {
+      background-attachment: scroll;
+  }
+
+  h1 {
+      font-size: 2.5em;
+  }
+
+  input[type="text"] {
+      width: 60%;
+  }
+
+  #input {
+      width: 80%;
+  }
+
+  button {
+      width: 90%;
+      padding: 14px;
+  }
+
+  li {
+      padding: 10px;
+  }
+
+  .container {
+      font-size: 16px;
+  }
+}
+
+/* Smartphones (portrait) */
+@media (max-width: 600px) {
+  body {
+      background-image: url("istockphoto-1330040188-612x612.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll; /* Change background attachment for mobile */
+  }
+
+  h1 {
+      font-size: 1.8em; /* Reduce font size for smaller screens */
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  input[type="text"] {
+      width: 80%; /* Take up more space on mobile */
+  }
+
+  #input {
+      width: 100%; /* Full-width input on mobile */
+      margin-bottom: 10px;
+  }
+
+  button {
+      width: 100%; /* Full-width buttons */
+      padding: 12px;
+  }
+
+  li {
+      padding: 12px;
+      margin-bottom: 10px;
+  }
+
+  .container {
+      font-size: 12px; /* Smaller checkbox font size */
+  }
+
+  .checkmark {
+      height: 1.8em;
+      width: 1.8em;
+  }
+}
+
+/* Smartphones (landscape) */
+@media (max-width: 768px) {
+  body {
+      background-attachment: scroll; /* Change background attachment for smaller screens */
+  }
+
+  h1 {
+      font-size: 2em; /* Adjust font size for landscape mobile */
+  }
+
+  input[type="text"] {
+      width: 70%; /* Input field width */
+  }
+
+  #input {
+      width: 90%; /* Input element full width */
+  }
+
+  button {
+      width: 100%; /* Button full width */
+      padding: 15px;
+  }
+
+  li {
+      padding: 12px;
+  }
+
+  .container {
+      font-size: 14px;
+  }
+
+  .checkmark {
+      height: 2em;
+      width: 2em;
+  }
 }
 /* @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700"); */
 

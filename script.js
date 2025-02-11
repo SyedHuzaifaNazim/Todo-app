@@ -90,7 +90,7 @@ sortableList.addEventListener(
         const currentElement =
             document.querySelector(
                 ".dragging");
-        if (afterElement == null) {
+        if (afterElement == null, currentElement != null) {
             sortableList.appendChild(
                 draggedItem
             );} 
