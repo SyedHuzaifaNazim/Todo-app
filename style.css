@@ -173,6 +173,15 @@ li:hover {
   transform: rotate(45deg);
 }
 
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("istockphoto-1330040188-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 @media (max-width: 1024px) {
   body {
       background-attachment: scroll; /* Change background attachment for tablet */
