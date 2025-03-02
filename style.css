@@ -105,7 +105,7 @@ li:hover {
 
 /* From Uiverse.io by Praashoo7 */ 
 /* Hide the default checkbox */
-.container input {
+/* .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -119,10 +119,10 @@ li:hover {
   cursor: pointer;
   font-size: 10px;
   user-select: none;
-}
+} */
 
 /* Create a custom checkbox */
-.checkmark {
+/* .checkmark {
   position: relative;
   top: 0;
   left: 0;
@@ -136,33 +136,33 @@ li:hover {
 .checkmark:hover {
   box-shadow: inset 17px 17px 16px #b3b3b3,
             inset -17px -17px 16px #ffffff;
-}
+} */
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+/* .container input:checked ~ .checkmark {
   box-shadow: none;
   background-color: limegreen;
   transform: rotateX(360deg);
-}
+} */
 
-.container input:checked ~ .checkmark:hover {
+/* .container input:checked ~ .checkmark:hover {
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-}
+} */
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+/* .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
+} */
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+/* .container input:checked ~ .checkmark:after {
   display: block;
-}
+} */
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+/* .container .checkmark:after {
   left: 0.96em;
   top: 0.7em;
   width: 0.25em;
@@ -171,6 +171,77 @@ li:hover {
   border-width: 0 0.15em 0.15em 0;
   box-shadow: 0.1em 0.1em 0em 0 rgba(0,0,0,0.3);
   transform: rotate(45deg);
+} */
+
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
 }
 
 
